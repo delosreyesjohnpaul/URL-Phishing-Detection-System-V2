@@ -24,8 +24,8 @@ model = genai.GenerativeModel(model_name="models/gemini-1.5-flash-latest")
 # --- OAuth setup ---
 os.environ['OAUTHLIB_INSECURE_TRANSPORT'] = '1'
 google_bp = make_google_blueprint(
-    client_id="",
-    client_secret="",
+    client_id="GOOGLE_OAUTH_CLIENT_ID",
+    client_secret="GOOGLE_OAUTH_CLIENT_SECRET",
     scope=[
         "openid",
         "https://www.googleapis.com/auth/userinfo.profile",
