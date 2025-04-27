@@ -9,5 +9,4 @@ prompt = f"Analyze the URL: {url}. Tell me what kind of site it is (social media
 
 response = model.generate_content(prompt)
 
-# 4. Print result
 print(response.text)
