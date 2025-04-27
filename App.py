@@ -155,7 +155,7 @@ def home():
 
             # AI analysis via Gemini
             prompt = (
-                f"Analyze the URL: {url}. Tell me what kind of site it is (social media, business, scam, phishing) "
+                f"You are an advanced AI model specializing in URL security classification. Analyze the URL: {url}. Tell me what kind of site it is (social media, business, scam, phishing) "
                 "and whether it is safe or not. Provide a simple sentence conclusion and a concise explanation."
             )
             try:
@@ -195,7 +195,7 @@ def predict_email():
     # new: Gemini‐powered email analysis
     try:
         gen_prompt = (
-            f"Below is the full email content. "
+            f"You are an expert in identifying scam messages in text, email etc. Below is the full email content. "
             f"First, state in one sentence whether this is a phishing email or a safe email (use exactly those phrases), "
             f"then give a concise explanation that matches your classification:\n\n"
             f"\"\"\"\n{email_text}\n\"\"\""
