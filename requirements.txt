@@ -11,6 +11,7 @@ gunicorn
 bcrypt
 flask-dance
 flask-sqlalchemy
+google-generativeai
 
 
 
